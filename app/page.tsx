@@ -39,16 +39,10 @@ export default function Home() {
           <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
           <div className="bg-gray-50 p-6 rounded-md">
             <p className="mb-2">
-              <strong>Parliamentary Office:</strong> House of Lords, London, SW1A 0PW
-            </p>
-            <p className="mb-2">
-              <strong>Email:</strong> office@lordsmith.parliament.uk
-            </p>
-            <p className="mb-2">
-              <strong>Phone:</strong> 020 7219 XXXX
+              <strong>Email:</strong> zak@farnworth.org.uk
             </p>
             <p className="mt-4 text-sm text-gray-600">
-              For constituency matters, please include your full name and address in all correspondence.
+              For all matters, please include your full name and address in all correspondence.
             </p>
           </div>
         </section>
