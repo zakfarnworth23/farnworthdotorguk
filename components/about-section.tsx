@@ -16,7 +16,7 @@ export default function AboutSection() {
         </div>
         <div className="md:col-span-2">
           <p className="mb-4 text-lg">
-            Zak Farnworth started his career at the age of 16. As IT Apprentice, he 
+            From Apprentice to Advocate: Zak Farnworth’s journey starting at 16.
           </p>
           <p className="mb-4">
             With a distinguished career spanning over three decades, Lord Smith has served in various governmental and
