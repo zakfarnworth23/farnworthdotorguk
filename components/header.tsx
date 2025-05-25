@@ -10,16 +10,22 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
   const pathname = usePathname()
 
-  const isActive = (path: string) => {
-    return pathname === path
-  }
+  const isActive = (path: string) => pathname === path
+
+  const links = [
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/#achievements", label: "Achievements" },
+    { href: "/#roles", label: "Roles" },
+    { href: "/#contact", label: "Contact" },
+  ]
 
   return (
-    <header className="govuk-blue text-white">
+    <header className="bg-[#1d70b8] text-white fixed top-0 left-0 w-full z-50 shadow-md">
       <div className="container mx-auto max-w-5xl px-4">
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
-            <div className="mr-4">
+            <div className="mr-3">
               <Image src="/crown-white.svg" alt="Crown logo" width={36} height={25} priority />
             </div>
             <Link href="/" className="text-2xl font-bold">
@@ -27,98 +33,52 @@ export default function Header() {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
-            <Link
-              href="/"
-              className={`hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none ${
-                isActive("/") ? "underline" : ""
-              }`}
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className={`hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none ${
-                isActive("/about") ? "underline" : ""
-              }`}
-            >
-              About
-            </Link>
-            <Link
-              href="/#achievements"
-              className="hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
-            >
-              Achievements
-            </Link>
-            <Link
-              href="/#roles"
-              className="hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
-            >
-              Roles
-            </Link>
-            <Link
-              href="/#contact"
-              className="hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
-            >
-              Contact
-            </Link>
-          </div>
+          <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={`hover:underline transition ${
+                  isActive(link.href) ? "underline" : ""
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
 
-          <div className="flex items-center">
-            <button className="p-2 md:hidden" onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
-              {menuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+          <button
+            className="md:hidden p-2"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+          >
+            {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu Overlay */}
       {menuOpen && (
-        <div className="md:hidden govuk-blue-dark">
-          <div className="container mx-auto px-4 py-4">
-            <nav className="flex flex-col space-y-4">
-              <Link
-                href="/"
-                className={`py-2 hover:bg-[#5694ca] px-2 rounded focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none ${
-                  isActive("/") ? "bg-[#5694ca]" : ""
-                }`}
-                onClick={() => setMenuOpen(false)}
-              >
-                Home
-              </Link>
-              <Link
-                href="/about"
-                className={`py-2 hover:bg-[#5694ca] px-2 rounded focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none ${
-                  isActive("/about") ? "bg-[#5694ca]" : ""
-                }`}
-                onClick={() => setMenuOpen(false)}
-              >
-                About
-              </Link>
-              <Link
-                href="/#achievements"
-                className="py-2 hover:bg-[#5694ca] px-2 rounded focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
-                onClick={() => setMenuOpen(false)}
-              >
-                Achievements
-              </Link>
-              <Link
-                href="/#roles"
-                className="py-2 hover:bg-[#5694ca] px-2 rounded focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
-                onClick={() => setMenuOpen(false)}
-              >
-                Roles
-              </Link>
-              <Link
-                href="/#contact"
-                className="py-2 hover:bg-[#5694ca] px-2 rounded focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
-                onClick={() => setMenuOpen(false)}
-              >
-                Contact
-              </Link>
+        <>
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40"
+            onClick={() => setMenuOpen(false)}
+          />
+          <div className="fixed top-0 left-0 w-full bg-[#1d70b8] text-white px-4 py-6 z-50 transition-all">
+            <nav className="flex flex-col space-y-4 text-lg font-medium">
+              {links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="px-2 py-2 rounded hover:bg-[#1478c8] transition"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ))}
             </nav>
           </div>
-        </div>
+        </>
       )}
     </header>
   )
