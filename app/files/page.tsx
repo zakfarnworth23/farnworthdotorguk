@@ -6,7 +6,7 @@ export default function FilesPage() {
   const files = [
     {
       title: "Curriculum Vitae",
-      description: "Full professional CV with work history and qualifications",
+      description: "CV with all the relevant information.",
       icon: <FilePdf className="h-8 w-8" />,
       link: "/files/cv.pdf",
       type: "download",
