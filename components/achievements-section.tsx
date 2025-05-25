@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react"
 
 export default function RecognitionSection() {
@@ -25,7 +27,7 @@ export default function RecognitionSection() {
     <section id="recognition" className="py-10 mt-10 border-t border-gray-300">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-govuk-blue border-b border-gray-300 pb-2">
-          Awards
+          Awards & Achievements
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left: Auto-rotating image */}
