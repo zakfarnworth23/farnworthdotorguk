@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="govuk-blue-dark text-white py-6 mt-8">
       <div className="container mx-auto max-w-5xl px-4 flex flex-col items-center space-y-2">
         <Image
-          src="/uk-emblem.svg" // Ensure this file is in your /public/images folder
+          src="/uk-crest.svg" // Ensure this file is in your /public/images folder
           alt="UK Government Emblem"
           width={40}
           height={40}
