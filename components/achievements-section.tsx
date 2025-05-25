@@ -78,7 +78,7 @@ export default function RecognitionSection() {
           <div className="flex flex-col justify-between h-full">
             <div className="text-lg leading-relaxed text-gray-800 mb-6 space-y-4">
               <p className="mb-4">
-  In 2024, I was proud to be recognised by BCS, The Chartered Institute for IT, as a <strong>Highly Commended Finalist</strong> in the <em>IT Infrastructure, Networks & Support Apprentice of the Year</em> category. This national recognition highlights the dedication and passion I’ve brought to my role as an apprentice and the meaningful contributions I’ve made early in my career.
+  In 2024, I was proud to be recognised by BCS, The Chartered Institute for IT, as <strong>Highly Commended</strong> in the <em>IT Infrastructure, Networks & Support Apprentice of the Year</em> category. This national recognition highlights the dedication and passion I’ve brought to my role as an apprentice and the meaningful contributions I’ve made early in my career.
 </p>
 <p className="mb-4">
   I’m grateful to the colleagues and teams I’ve worked with for their support, and I see this achievement not as a finish line, but as motivation to keep growing, delivering impact, and championing smart, people-focused technology in education.
