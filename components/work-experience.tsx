@@ -22,8 +22,8 @@ export default function WorkExperience() {
       id: 1,
       title: "ICT Technician",
       company: "Albany Learning Trust",
-      location: "London",
-      period: "2020 - Present",
+      location: "Chorley & Horwich",
+      period: "March - May 2025",
       description:
         "Responsible for managing and maintaining IT infrastructure across multiple schools within the trust.",
       responsibilities: [
@@ -37,10 +37,10 @@ export default function WorkExperience() {
     },
     {
       id: 2,
-      title: "IT Support Specialist",
-      company: "Education Technology Services",
-      location: "Manchester",
-      period: "2017 - 2020",
+      title: "IT Apprentice",
+      company: "The Quill C of E Trust",
+      location: "Bolton",
+      period: "2023 - March 2025",
       description: "Delivered comprehensive IT support services to educational institutions.",
       responsibilities: [
         "Resolving hardware and software issues for clients",
@@ -53,10 +53,10 @@ export default function WorkExperience() {
     },
     {
       id: 3,
-      title: "Technical Assistant",
-      company: "Digital Learning Centre",
-      location: "Birmingham",
-      period: "2015 - 2017",
+      title: "IT Technician's Assistant",
+      company: "Bolton St Catherine's Academy",
+      location: "Bolton",
+      period: "2022 - 2022",
       description: "Supported the implementation of digital learning initiatives in educational settings.",
       responsibilities: [
         "Assisting with the setup of digital learning environments",
