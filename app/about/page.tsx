@@ -42,25 +42,23 @@ export default function AboutPage() {
           />
         </div>
         <div className="md:col-span-2">
-          <h2 className="text-2xl font-bold mb-4">Professional Background</h2>
-          <p className="mb-4 text-lg">
-            With over a decade of experience in the technology sector, I have developed expertise in IT infrastructure,
-            educational technology, and digital transformation.
-          </p>
+          <h2 className="text-2xl font-bold mb-4">About Zak</h2>
           <p className="mb-4">
-            Currently serving as an ICT Technician at Albany Learning Trust, I am responsible for maintaining and
-            improving the technology infrastructure that supports educational delivery across multiple schools.
-          </p>
-          <p className="mb-4">
-            My approach combines technical knowledge with a deep understanding of how technology can enhance learning
-            outcomes. I believe in creating sustainable, user-friendly systems that empower educators and students
-            alike.
-          </p>
-          <p>
-            Throughout my career, I have consistently demonstrated a commitment to innovation, problem-solving, and
-            collaborative working. I am passionate about leveraging technology to create positive change in educational
-            environments.
-          </p>
+  I began my career in September 2023, choosing an Apprenticeship route directly after school to gain real-world experience in the IT industry. This hands-on approach allowed me to immediately apply my skills in dynamic and meaningful ways.
+</p>
+<p className="mb-4">
+  More recently, I served as ICT Technician at Albany Learning Trust, where I support and develop the digital infrastructure that underpins teaching and learning across multiple schools. My role includes managing hardware and software, troubleshooting technical issues, and implementing improvements that ensure reliability and accessibility for staff and students.
+</p>
+<p className="mb-4">
+  My time at Albany Learning Trust came to an end in May 2025. I decided to take a break from the realm of Education, and instead, I moved to a new company where the sky's the limit. In my new role, soon to start, I will be involved in critical projects that I am very much looking forward to starting.
+</p>
+<p className="mb-4">
+  I’m passionate about using technology as a tool to enhance education. My focus is on building systems that are sustainable, intuitive, and impactful — helping educators to teach more effectively and learners to engage more confidently.
+</p>
+<p>
+  With a strong commitment to innovation, problem-solving, and collaboration, I strive to create environments where technology serves people, not the other way around. I’m driven by the belief that well-designed IT systems can unlock opportunities and drive positive change in education.
+</p>
+
         </div>
       </div>
 
