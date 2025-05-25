@@ -1,58 +1,33 @@
-import { Award, BookOpen, Briefcase, Globe, Heart, Lightbulb } from "lucide-react"
-
-export default function AchievementsSection() {
-  const achievements = [
-    {
-      title: "Queen's Award for Enterprise",
-      year: "2018",
-      description: "Recognized for outstanding contribution to international trade and business innovation.",
-      icon: <Award className="h-8 w-8 text-govuk-blue" />,
-    },
-    {
-      title: "Commander of the Order of the British Empire (CBE)",
-      year: "2012",
-      description: "For services to economic development and public administration.",
-      icon: <Briefcase className="h-8 w-8 text-govuk-blue" />,
-    },
-    {
-      title: "Honorary Doctorate",
-      year: "2016",
-      description: "Awarded by the University of Cambridge for contributions to public policy.",
-      icon: <BookOpen className="h-8 w-8 text-govuk-blue" />,
-    },
-    {
-      title: "Global Leadership Award",
-      year: "2019",
-      description: "For pioneering work in sustainable development and international cooperation.",
-      icon: <Globe className="h-8 w-8 text-govuk-blue" />,
-    },
-    {
-      title: "National Charity Ambassador",
-      year: "2014-Present",
-      description: "Serving as ambassador for leading national charities focused on youth development.",
-      icon: <Heart className="h-8 w-8 text-govuk-blue" />,
-    },
-    {
-      title: "Innovation Policy Framework",
-      year: "2017",
-      description: "Led the development of a nationally-recognized policy framework for innovation.",
-      icon: <Lightbulb className="h-8 w-8 text-govuk-blue" />,
-    },
-  ]
-
+export default function RecognitionSection() {
   return (
-    <section id="achievements" className="py-8 mt-8">
-      <h2 className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2">Awards & Achievements</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {achievements.map((achievement, index) => (
-          <div key={index} className="bg-gray-50 p-6 rounded-md border-l-4 border-govuk-blue">
-            <div className="mb-4">{achievement.icon}</div>
-            <h3 className="font-bold text-lg mb-1">{achievement.title}</h3>
-            <p className="text-sm text-gray-600 mb-2">{achievement.year}</p>
-            <p>{achievement.description}</p>
+    <section id="recognition" className="py-10 mt-10 border-t border-gray-300">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-govuk-blue border-b border-gray-300 pb-2">
+          National Recognition
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+          {/* Left: Photo gallery */}
+          <div className="grid grid-cols-1 gap-4">
+            <img
+              src="/images/award-1.jpg"
+              alt="Receiving the Queen’s Award"
+              className="rounded-md border border-gray-300"
+            />
+            <img
+              src="/images/award-2.jpg"
+              alt="Presentation of the Queen’s Award for Enterprise"
+              className="rounded-md border border-gray-300"
+            />
           </div>
-        ))}
+
+          {/* Right: Formal paragraph */}
+          <div>
+            <p className="text-lg leading-relaxed text-gray-800">
+              In 2018, our organisation was proud to receive the <strong>Queen’s Award for Enterprise</strong>, one of the most prestigious accolades granted to UK businesses. The award recognised our outstanding contribution to international trade, business innovation, and public value. Presented on behalf of Her Majesty the Queen, this honour reflects years of dedicated work and a commitment to delivering impact both at home and abroad.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
-  )
+  );
 }
