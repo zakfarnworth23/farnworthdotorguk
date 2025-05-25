@@ -14,7 +14,7 @@ export default function RecognitionSection() {
               className="rounded-md border border-gray-300"
             />
             <img
-              src="/images/award-photo-02.jpg"
+              src="/award-photo-02.jpg"
               alt="BCS IT & Digital Apprenticeship Award 2024"
               className="rounded-md border border-gray-300"
             />
