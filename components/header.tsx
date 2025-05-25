@@ -26,7 +26,7 @@ export default function Header() {
         <div className="mx-auto max-w-5xl px-4 h-16 flex items-center justify-between">
           <div className="flex items-center">
             <Image
-              src="/crown-white.svg"
+              src="/uk-crest.svg"
               alt="Crown logo"
               width={36}
               height={25}
