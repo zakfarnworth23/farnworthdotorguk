@@ -3,19 +3,19 @@ export default function RecognitionSection() {
     <section id="recognition" className="py-10 mt-10 border-t border-gray-300">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-govuk-blue border-b border-gray-300 pb-2">
-          National Recognition
+          Recognition & Awards
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
           {/* Left: Photo gallery */}
           <div className="grid grid-cols-1 gap-4">
             <img
-              src="/images/award-1.jpg"
-              alt="Receiving the Queen’s Award"
+              src="/award-photo-01.jpg"
+              alt="BCS IT & Digital Apprenticeship Award 2024"
               className="rounded-md border border-gray-300"
             />
             <img
-              src="/images/award-2.jpg"
-              alt="Presentation of the Queen’s Award for Enterprise"
+              src="/images/award-photo-02.jpg"
+              alt="BCS IT & Digital Apprenticeship Award 2024"
               className="rounded-md border border-gray-300"
             />
           </div>
