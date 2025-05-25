@@ -33,7 +33,7 @@ export default function RecognitionSection() {
     >
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-govuk-blue border-b border-gray-300 pb-2">
-          National Recognition
+          Awards & Achievements
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
@@ -77,18 +77,13 @@ export default function RecognitionSection() {
           {/* Right: Description and LinkedIn button */}
           <div className="flex flex-col justify-between h-full">
             <div className="text-lg leading-relaxed text-gray-800 mb-6 space-y-4">
-              <p>
-                In 2018, our organisation was proud to receive the{" "}
-                <strong>Queen’s Award for Enterprise</strong>, one of the most
-                prestigious accolades granted to UK businesses.
-              </p>
-              <p>
-                The award recognised our outstanding contribution to
-                international trade, business innovation, and public value.
-                Presented on behalf of Her Majesty the Queen, this honour
-                reflects years of dedicated work and a commitment to delivering
-                impact both at home and abroad.
-              </p>
+              <p className="mb-4">
+  In 2024, I was proud to be recognised by BCS, The Chartered Institute for IT, as a <strong>Highly Commended Finalist</strong> in the <em>IT Infrastructure, Networks & Support Apprentice of the Year</em> category. This national recognition highlights the dedication and passion I’ve brought to my role as an apprentice and the meaningful contributions I’ve made early in my career.
+</p>
+<p className="mb-4">
+  I’m grateful to the colleagues and teams I’ve worked with for their support, and I see this achievement not as a finish line, but as motivation to keep growing, delivering impact, and championing smart, people-focused technology in education.
+</p>
+
             </div>
 
             <a
