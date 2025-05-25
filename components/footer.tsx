@@ -11,6 +11,7 @@ export default function Footer() {
           height={40}
         />
         <p className="text-lg font-bold text-white text-center">Office of Zak Farnworth</p>
+        <p className="text-lg font-bold text-white text-center">Not a real office, just a personal one.</p>
       </div>
     </footer>
   );
