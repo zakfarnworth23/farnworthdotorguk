@@ -6,7 +6,6 @@ import { setCookie, getCookie } from "@/lib/cookies"
 export default function CookieBanner() {
   const [visible, setVisible] = useState(false)
 
-  // Check for cookie consent on component mount
   useEffect(() => {
     const cookieConsent = getCookie("cookie_consent")
     if (cookieConsent === null) {
@@ -15,50 +14,46 @@ export default function CookieBanner() {
   }, [])
 
   const acceptCookies = () => {
-    // Set cookie consent to "accepted"
-    setCookie("cookie_consent", "accepted", 365) // Valid for 1 year
-
-    // Set analytics cookies if needed
+    setCookie("cookie_consent", "accepted", 365)
     setCookie("analytics_enabled", "true", 365)
-
     console.log("Cookies accepted")
     setVisible(false)
   }
 
   const rejectCookies = () => {
-    // Set cookie consent to "rejected" but allow essential cookies
     setCookie("cookie_consent", "rejected", 365)
-
-    // Remove any analytics cookies if they exist
     document.cookie = "analytics_enabled=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"
-
     console.log("Additional cookies rejected")
     setVisible(false)
   }
 
   const viewCookies = () => {
-    // In a real implementation, this would show a modal with cookie details
     console.log("View cookies clicked")
-    // For now, just hide the banner
     setVisible(false)
   }
 
   if (!visible) return null
 
   return (
-    <div className="bg-white border-b border-gray-300 p-4">
+    <div className="fixed top-0 left-0 w-full z-[100] bg-white border-b border-gray-300 p-4 shadow">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-xl font-bold mb-2">Cookies on this website</h2>
         <p className="mb-4">We use some essential cookies to make this website work.</p>
         <p className="mb-4">
-          We'd like to set additional cookies to understand how you use this website, remember your settings and improve
+          We'd like to set additional cookies to understand how you use this website, remember your settings, and improve
           government services.
         </p>
         <div className="flex flex-wrap gap-4">
-          <button onClick={acceptCookies} className="govuk-button">
+          <button
+            onClick={acceptCookies}
+            className="bg-green-700 text-white font-semibold py-2 px-4 rounded hover:bg-green-800 transition"
+          >
             Accept additional cookies
           </button>
-          <button onClick={rejectCookies} className="govuk-button">
+          <button
+            onClick={rejectCookies}
+            className="bg-green-700 text-white font-semibold py-2 px-4 rounded hover:bg-green-800 transition"
+          >
             Reject additional cookies
           </button>
           <button
