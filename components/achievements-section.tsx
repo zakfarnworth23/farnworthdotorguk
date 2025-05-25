@@ -1,17 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { FaLinkedin } from "react-icons/fa";
 
 export default function RecognitionSection() {
   const images = [
     {
       src: "/award-photo-01.jpg",
-      alt: "BCS IT & Digital Apprenticeship Award 2024",
+      alt: "BCS IT & Digital Apprenticeship Awards 2024",
     },
     {
       src: "/award-photo-02.jpg",
-      alt: "BCS IT & Digital Apprenticeship Award 2024",
+      alt: "BCS IT & Digital Apprenticeship Awards 2024",
     },
   ];
 
@@ -34,7 +33,7 @@ export default function RecognitionSection() {
     >
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold mb-8 text-govuk-blue border-b border-gray-300 pb-2">
-          Awards & Achievements
+          National Recognition
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
@@ -57,7 +56,7 @@ export default function RecognitionSection() {
               ))}
             </div>
 
-            {/* Thumbnail selector (visible on hover) */}
+            {/* Thumbnails shown on hover */}
             <div className="mt-3 flex gap-2 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               {images.map((img, i) => (
                 <img
@@ -75,10 +74,10 @@ export default function RecognitionSection() {
             </div>
           </div>
 
-          {/* Right: Text and LinkedIn button */}
+          {/* Right: Description and LinkedIn button */}
           <div className="flex flex-col justify-between h-full">
-            <div className="text-lg leading-relaxed text-gray-800 mb-6">
-              <p className="mb-4">
+            <div className="text-lg leading-relaxed text-gray-800 mb-6 space-y-4">
+              <p>
                 In 2018, our organisation was proud to receive the{" "}
                 <strong>Queen’s Award for Enterprise</strong>, one of the most
                 prestigious accolades granted to UK businesses.
@@ -98,7 +97,14 @@ export default function RecognitionSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-md text-sm font-medium w-max transition-colors"
             >
-              <FaLinkedin className="mr-2 h-4 w-4" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-4 h-4 mr-2"
+              >
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.5c0-1.378-.028-3.15-1.922-3.15-1.923 0-2.219 1.5-2.219 3.043v5.607h-3v-10h2.881v1.366h.041c.401-.759 1.381-1.56 2.842-1.56 3.038 0 3.6 2.002 3.6 4.604v5.59z" />
+              </svg>
               View on LinkedIn
             </a>
           </div>
