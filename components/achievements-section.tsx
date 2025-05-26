@@ -27,14 +27,9 @@ export default function RecognitionSection() {
   }, [hovering]);
 
   return (
-    <section
-      id="recognition"
-      className="py-10 mt-10 border-t border-gray-300 bg-white"
-    >
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold mb-8 text-govuk-blue border-b border-gray-300 pb-2">
-          Awards & Achievements
-        </h2>
+   <section id="awards" className="py-8 mt-8">
+      <h2 className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2">Awards & Achievements</h2>
+      <div className="space-y-4">
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
           {/* Left: Auto-fading image with thumbnail selector */}
