@@ -29,8 +29,9 @@ export default function AboutSection() {
           </p>
           <p>
             I am deeply passionate about cloud and hybrid technologies and their transformative potential in driving organisational growth. By helping organisations adapt to rapid technological changes, I strive to unlock new opportunities for innovation, resilience, and future-proofing their technological capabilities.
-
-My career aspirations are to move to London, Westminster and work either in government, Houses of Parliament, or for the royal household.
+          </p>
+          <p className="mb-4">
+            My career aspirations are to move to London, Westminster and work either in government, Houses of Parliament, or for the royal household.
           </p>
         </div>
       </div>
