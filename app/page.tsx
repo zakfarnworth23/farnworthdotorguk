@@ -1,7 +1,7 @@
 import Link from "next/link"
 import AboutSection from "@/components/about-section"
 import AchievementsSection from "@/components/achievements-section"
-import RolesSection from "@/components/roles-section"
+import WorkExperience from "@/components/work-experience"
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
       <div className="container mx-auto max-w-5xl px-4 py-8">
         <AboutSection />
         <AchievementsSection />
-        <RolesSection />
+        <WorkExperience />
 
         {/* Contact section */}
         <section id="contact" className="mt-16 border-t-2 border-gray-200 pt-8 mb-24">
