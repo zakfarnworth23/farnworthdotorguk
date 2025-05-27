@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import AboutMe from './AboutMe';
+import AboutMe from './AboutMe'
 import WorkExperience from "@/components/work-experience"
 import GelCardGrid from "@/components/gel-card-grid"
 import { FileText, Download, ExternalLink } from "lucide-react"
