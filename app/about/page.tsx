@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image"
+import AboutMe from './AboutMe';
 import WorkExperience from "@/components/work-experience"
 import GelCardGrid from "@/components/gel-card-grid"
 import { FileText, Download, ExternalLink } from "lucide-react"
@@ -72,6 +73,11 @@ export default function AboutPage() {
       <h2 className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2">Work Experience</h2>
       <div className="mb-16">
         <WorkExperience />
+      </div>
+
+       <h2 className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2">About me</h2>
+      <div className="mb-16">
+        <AboutMe />
       </div>
 
       <h2 className="text-2xl font-bold mb-8 border-b-2 border-gray-200 pb-2">Resources</h2>
