@@ -18,12 +18,6 @@ export default function Home() {
             >
               Contact Office
             </Link>
-            <Link
-              href="#roles"
-              className="govuk-blue-dark text-white font-bold py-3 px-6 inline-block text-center border-2 border-white hover:bg-[#1d70b8] transition-colors focus:outline-none focus:ring-4 focus:ring-yellow-400"
-            >
-              View Roles & Responsibilities
-            </Link>
           </div>
         </div>
       </div>
