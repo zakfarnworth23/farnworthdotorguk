@@ -41,7 +41,7 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
         <div className="md:col-span-1">
           <Image
-            src="/zfarnworth-tempest.png?height=400&width=300"
+            src="/zfarnworth.jpg?height=400&width=300"
             alt="Professional portrait"
             width={300}
             height={400}
