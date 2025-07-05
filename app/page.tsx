@@ -10,7 +10,7 @@ export default function Home() {
       <div className="govuk-blue text-white py-12 px-4 md:py-16">
         <div className="container mx-auto max-w-5xl">
           <h1 className="text-3xl md:text-5xl font-bold mb-6">Zak Farnworth MMVI</h1>
-          <p className="text-xl md:text-2xl mb-8">New headline coming soon...</p>
+          <p className="text-xl md:text-2xl mb-8">ICT Technician | Albany Learning Trust</p>
           <div className="flex flex-row gap-4 mt-8">
             <Link
               href="#contact"
