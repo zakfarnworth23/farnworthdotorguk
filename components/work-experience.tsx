@@ -23,7 +23,7 @@ export default function WorkExperience() {
       title: "ICT Technician",
       company: "Albany Learning Trust",
       location: "Chorley & Horwich",
-      period: "March - May 2025",
+      period: "March 2025 - Present",
       description:
         "Responsible for managing and maintaining IT infrastructure across multiple schools within the trust.",
       responsibilities: [
